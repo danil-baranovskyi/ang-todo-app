@@ -1,0 +1,10 @@
+@import "mixins";
+
+.todo {
+  @include flex-aic-sb;
+
+  &__action-buttons {
+    @include flex-aic;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,32 @@
+
+::ng-deep {
+  .tasks {
+    --mdc-text-button-container-height: 44px;
+    --mdc-text-button-container-shape: 10px;
+
+    position: fixed;
+    max-width: 460px;
+    width: 100%;
+    max-height: 70vh;
+    height: 100%;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 15px;
+
+    &__search {
+      width: 100%;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    &__add-btn.mdc-button {
+      min-width: fit-content
+    }
+  }
+}

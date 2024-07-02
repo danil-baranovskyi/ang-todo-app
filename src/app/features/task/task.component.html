@@ -1,0 +1,13 @@
+<mat-card appearance="outlined" class="tasks">
+  <div class="tasks__header">
+    <app-search-task class="tasks__search"></app-search-task>
+    <button mat-button class="tasks__add-btn">
+      <mat-icon svgIcon="add-task-icon"></mat-icon>
+      Add task
+    </button>
+  </div>
+  <div>
+    here
+    <app-tasks-list [isTodo]="true" [tasksList]="tasksTodoList"></app-tasks-list>
+  </div>
+</mat-card>

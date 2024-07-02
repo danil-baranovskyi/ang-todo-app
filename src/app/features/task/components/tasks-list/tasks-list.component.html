@@ -1,0 +1,13 @@
+<ul>
+  @if (isTodo()) {
+    @for (task of tasksList(); track $index) {
+      <li>
+        <app-task-todo [task]="task">{{ task.content }}</app-task-todo>
+      </li>
+    }
+  } @else {
+    <li>
+      <app-task-done></app-task-done>
+    </li>
+  }
+</ul>
