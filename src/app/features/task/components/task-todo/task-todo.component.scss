@@ -1,10 +1,23 @@
 @import "mixins";
+@import "variables";
 
 .todo {
   @include flex-aic-sb;
+  padding: 7px 12px;
+  background-color: $main-bg-color;
+  border-radius: 8px;
 
   &__action-buttons {
     @include flex-aic;
     gap: 10px;
+  }
+
+  &__text {
+    color: $todo-color-text;
+  }
+
+  &__icon-button {
+    background: none;
+    box-shadow: none;
   }
 }

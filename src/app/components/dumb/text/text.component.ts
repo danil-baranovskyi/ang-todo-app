@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrl: './text.component.scss'
 })
 export class TextComponent {
-
 }
